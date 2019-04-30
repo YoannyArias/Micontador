@@ -134,7 +134,7 @@ header nav ul li
   {
     width: 50%;
     height: 60%;
-    /* left: -100%; */
+    left: -100%;
     margin: 0;
     position: fixed;
     
