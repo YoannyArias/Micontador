@@ -15,9 +15,8 @@
 </head>
 <body>
     <!-- Java Scrip -->
-    <script src="micontadorpaginaweb.js">
-    
-    </script>
+    <script src="micontadorpaginaweb.js"> </script>
+    <script src="consutarRenta.js"></script>
     <!-- Aqui empieza el header -->
 
         <div class="logo">
@@ -35,7 +34,7 @@
         </div>
         <header class="header">
           <div class="menuBar">
-            <a href="#" class="botonMenu" onclick="menu()"><i class="fas fa-list-ul"></i>Menú</a>
+            <a href="#" class="botonMenu"><i class="fas fa-list-ul"></i>Menú</a>
           </div>
             <nav>
               <ul>
@@ -59,7 +58,7 @@
                   <h3 class="declararContenido">¿ Cuándo debes <span class="declarar"><br /> declarar Renta ?.</span> </h3>
                   <i class="fas fa-portrait"><input type="text" id="textConsultar" placeholder="Número de cédula"></i>
                     <br />
-                   <button class="botonConsultar">Consultar</button>
+                   <button class="botonConsultar" onclick="consultaFechaDeclaracion()">Consultar</button>
                    <p id="debesDeclarar">Hola</p>
                 </aside>
                 <div class="widget1">1
