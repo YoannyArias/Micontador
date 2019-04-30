@@ -25,6 +25,7 @@ h2{
   color: white;
   text-align: center;
   margin-top: 20px;
+  letter-spacing: 1pt;
   
 }
 
@@ -120,7 +121,7 @@ header nav ul li
   }
   h2 
   {
-    font-size: 10px;
+    font-size: 8px;
     margin-top: 10px;
   }
 
