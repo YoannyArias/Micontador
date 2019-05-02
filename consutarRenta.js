@@ -16,7 +16,7 @@
         if (isNaN(cedula)==true)
         {
     
-        //   declaracion.innerHTML = "No has digitado un número valido ";
+        debesDeclarar.innerHTML = "No has digitado un número valido ";
         console.log("Hola");
         }
         else
@@ -25,13 +25,13 @@
           {
           subString = 100;
           var debesdeclarar = fechasDeclaracion[subString-1];
-        //   declaracion.innerHTML = `Tu fecha límite para declarar es el <strong> ${debesdeclarar} </strong>`;
+          debesDeclarar.innerHTML = `La fecha límite para declarar es el <br /><strong>  ${debesdeclarar} </strong>`;
         console.log("Hola2");
           }
           else
           {
           var debesdeclarar = fechasDeclaracion[subString-1];
-        //   declaracion.innerHTML = `Tu fecha límite para declarar es el <strong> ${debesdeclarar} </strong>`;
+          debesDeclarar.innerHTML = `La fecha límite para declarar es el <br /><strong> ${debesdeclarar} </strong>`;
         console.log("Hola3");
           }
         }

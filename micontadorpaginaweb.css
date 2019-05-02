@@ -16,6 +16,7 @@
   
 }
 
+
 .logo img
 {
   margin-left: 100px;
@@ -50,7 +51,7 @@ margin: 20px;
 background: #8e9eab;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+font-family: sans-serif;
 
 
 }
@@ -157,7 +158,8 @@ header nav ul li
   {
     display: block;
     padding: 20px;
-    /* padding-bottom: 50px; */
+    padding-bottom: 40px; /* Cambios realizados por quitar el texto "Menú" del html */
+    padding-bottom: 50px; 
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -170,7 +172,7 @@ header nav ul li
   .menuBar i
   {
     float: right;
-    font-size: 40px;
+    font-size: 30px;
     
   }
 }
@@ -194,24 +196,54 @@ header nav ul li
 
 }
 
-.contenedor .cajaConsultar
+.cajaConsultar
 {
 background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column: span 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+
 }
 
+.contenedor .widget1
+{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 290px;
+  height: 295px;
+  position: absolute;
+  top: 240px;
+  right: -120%;
+}
 
-.contenedor .widget1,
+.inWidget1
+{ 
+  text-align: center;
+  margin-top: 20%;
+}
+
+.inWidget1 button
+{
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#debesDeclarar
+{
+  margin: 15px;
+  font-size: 25px;
+  color: white;
+}
+
 .contenedor .widget2,
-.contenedor .widget2
+.contenedor .widget3,
+.contenedor .widget4
 {
 background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -243,7 +275,12 @@ grid-column: span 3;
   .contenedor .widget1
   {
     grid-column: span 3;
-    
+    width: 70%;
+   height: auto;
+   top: 330px;
+   right: -120%;
+   align-items: center;
+
   }
   .contenedor .widget2
   {
