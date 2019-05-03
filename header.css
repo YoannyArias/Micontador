@@ -39,7 +39,7 @@ span
   padding: 0;
   text-align: center; 
   position: fixed;
-  right: 3%;
+  right: 5%;
 }
 
 header
@@ -73,6 +73,7 @@ header nav ul li
   float: left;
   letter-spacing: 1pt;
   font-size: 20px;
+  margin-right: 3%;
 }
 
 header nav ul li a
