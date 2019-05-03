@@ -12,7 +12,7 @@
         if (isNaN(cedula)==true || cedula=="")
         {
     
-        debesDeclarar.innerHTML = "Has digitado un número invalido ";
+        debesDeclarar.innerHTML = "No has digitado un número válido ";
         }
         else
         {
