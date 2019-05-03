@@ -1,188 +1,22 @@
+
+/* :::::::::::::::::::Body:::::::::::::::::::::::: */
+
+
 *
 {
   margin: 0px;
   padding: 0px;
 }
 
-.logo
-{
-  background: #000000;
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border-radius: 5px;
-  
-}
-
-
-.logo img
-{
-  margin-left: 100px;
-}
-
-h2{
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing: 1pt;
-  
-}
-
-span
-{
-  color: yellow;
-}
-
-.whatsapp
-{
-  justify-content: center;
-  padding: 0;
-  text-align: center;
-  
-}
-
-
-
 body
 {
 margin: 20px;
-background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 font-family: sans-serif;
-
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
-/* :::::::::::::::::::Header:::::::::::::::::::::::: */
-
-header
-{   
-    width: 100%;
-    
-    
-  
-}
-header nav
-{
-width: 90%;
-max-width: 1200px;
-margin: 20px auto;
-background: black;  
-border-radius: 5px;
-z-index: 100;
-
-    
-}
-
-.menuBar
-{
-  display: none;
-}
-
-header nav ul
-{
-  overflow: hidden;
-  list-style: none;
-}
-
-
-header nav ul li
-{
-  float: left;
-  letter-spacing: 1pt;
-  font-size: 20px;
-}
-
-header nav ul li a
-{
-  padding: 20px;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  color:white;
-}
- header nav ul li i 
-{
-  margin-right: 10px;
-} 
-
-header nav ul li 
-:hover {
-  background: #3A3C3D;
-  color: yellow;
-}
-
-@media screen and (max-width:768px)
-{
-
-  .logo img{
-    margin: 0;
-    justify-content: left;
-    width: 90%;
-  }
-  h2 
-  {
-    font-size: 50%;
-    margin-top: 10px;
-  }
-
-  .Servicios,
-  .whatsapp
-  {
-    width: 90%;
-  }
-
-  header nav
-  {
-    width: 60%;
-    height: 60%;
-    left: -100%;
-    margin: 0;
-    position: fixed; 
-     /* ojo estaba en fixed.  */
-    
-  }
-  header nav ul li a
-  {
-    display: block;
-    float: none;
-    border-bottom: 1px solid white;
-    font-size: 15px;
-  }
-  .menuBar
-  {
-    display: block;
-    width: 100%;
-    background: #000000;
-  }
-  .menuBar .botonMenu
-  {
-    display: block;
-    padding: 20px;
-    padding-bottom: 40px; /* Cambios realizados por quitar el texto "Menú" del html */
-    padding-bottom: 50px; 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #000000;
-    font-size: 25px;
-  }
-  .menuBar i
-  {
-    float: right;
-    font-size: 30px;
-    
-  }
-}
-
-/* :::::::::::::::::::Body:::::::::::::::::::::::: */
-
 .contenedor
 {
   max-width:1200px ;
@@ -190,8 +24,7 @@ header nav ul li
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: repeat(2, auto);
-  
+  grid-template-rows: repeat(2, auto); 
 }
 
 .contenedor .hero
@@ -289,7 +122,6 @@ grid-column: span 3;
   }
 
 }
-
 #textConsultar
 {
 background:white;
@@ -354,20 +186,3 @@ margin-left: 28%;
 
 
 
-/* :::::::::::::::::::Footer:::::::::::::::::::::::: */
-
-.Footer li
-
-{
-  display: inline;
-  padding-right: 40px;
-}
-
-.Footer
-{
-padding: 20px;
-background:#000;
-padding: 15px;
-text-align: center;
-border-radius: 15px;
-}
