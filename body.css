@@ -1,0 +1,188 @@
+
+/* :::::::::::::::::::Body:::::::::::::::::::::::: */
+
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+body
+{
+margin: 20px;
+font-family: sans-serif;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.contenedor
+{
+  max-width:1200px ;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto); 
+}
+
+.contenedor .hero
+ {
+  border-radius: 5px;
+  grid-column: span 2;
+}
+
+.cajaConsultar
+{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.subCajaConsultar
+{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+   left: -500%;
+  
+} 
+
+
+#debesDeclarar
+{
+  margin: 15px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+#fecha
+{
+  margin: 15px;
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contenedor .widget2,
+.contenedor .widget3,
+.contenedor .widget4
+{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+@media screen and (max-width:768px){
+
+  .contenedor .hero {
+grid-column: span 3;
+}
+  .contenedor .cajaConsultar
+  {
+    grid-column: span 3;
+  }
+
+  .contenedor .widget2
+  {
+    grid-column: span 3;
+    
+  }
+  .contenedor .widget3
+  {
+    grid-column: span 3;
+    
+  }
+
+}
+#textConsultar
+{
+background:white;
+padding: 10px;
+width: auto;
+text-align: center;
+font-size: 20px;
+border-radius: 5px;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#textConsultar:hover
+{
+background:rgb(230, 227, 227);
+color:black;
+border-color:#424242;
+}
+.declararContenido
+{
+  margin-bottom: 40px;
+  color:white;
+  font-weight: bold;
+  width: auto;
+  font-size: 30px;
+}
+
+.declarar
+{
+
+  color:yellow;
+}
+
+.botonConsultar
+{
+  min-width: 150px;
+  height: 40px;
+  margin: auto 20%;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background: #424242;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.botonConsultar:hover
+{
+  /* -webkit-box-shadow: 8px 3px 10px 5px #424242; */
+  border: none;
+  color: #424242;
+  background: white;
+}
+
+.subCajaConsultar .botonConsultar
+{
+margin-left: 28%;
+}
+
+
+
+
+

@@ -7,16 +7,16 @@ var contador = 1;
 
 $(".botonConsultar").click(function(){
    if (contador===1){
-       $(".widget1").animate({
-           right: "120px"
+       $(".subCajaConsultar").animate({
+           left: "0%"
        });
        contador = 0;
     }
     else
     {
     contador = 1;
-    $(".widget1").animate({
-        right: '-120%'
+    $(".subCajaConsultar").animate({
+        left: '-500%'
     });
     }  
 });
