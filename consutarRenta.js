@@ -6,18 +6,13 @@
     {
       var digita = document.getElementById("textConsultar");
       var cedula = digita.value;
-      console.log(digita);
       var extra = cedula.length;
       var subString = parseInt(cedula.substring(extra, extra-2));
-      console.log(subString);
     
-      var digitaTexto = isNaN(subString); //Se valida si el usuario ingresó texto o un número.
-    
-        if (isNaN(cedula)==true)
+        if (isNaN(cedula)==true || cedula=="")
         {
     
-        debesDeclarar.innerHTML = "No has digitado un número valido ";
-        console.log("Hola");
+        debesDeclarar.innerHTML = "Has digitado un número invalido ";
         }
         else
         {
@@ -25,14 +20,14 @@
           {
           subString = 100;
           var debesdeclarar = fechasDeclaracion[subString-1];
-          debesDeclarar.innerHTML = `La fecha límite para declarar es el <br /><strong>  ${debesdeclarar} </strong>`;
-        console.log("Hola2");
+          debesDeclarar.innerHTML = "La fecha límite para declarar renta es:"
+          fecha.innerHTML = debesdeclarar;
           }
           else
           {
           var debesdeclarar = fechasDeclaracion[subString-1];
-          debesDeclarar.innerHTML = `La fecha límite para declarar es el <br /><strong> ${debesdeclarar} </strong>`;
-        console.log("Hola3");
+          debesDeclarar.innerHTML = "La fecha límite para declarar renta es:"
+          fecha.innerHTML = debesdeclarar;
           }
         }
     }
