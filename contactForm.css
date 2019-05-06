@@ -1,0 +1,180 @@
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Vollkorn', serif;
+    padding: 1em;
+}
+
+.contenedor
+{
+    background:rgb(44, 43, 43);;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;  
+    padding-bottom: 1em
+}
+
+.logo
+{
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 2pt;
+}
+
+
+span
+{
+    color: yellow;
+    font-family: inherit
+}
+
+h4{
+    color: white;
+    text-align: justify;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .5pt;
+}
+
+.formulario
+{
+display: grid;
+grid-template-columns: 2fr 1fr;
+background: rgb(49, 48, 48);
+
+}
+
+.formulario > *
+{
+  padding: 1.5em;
+  margin: 0;  
+}
+
+.campos
+{
+    color: yellow;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.block
+{
+    grid-column: span 2;
+}
+
+h4{
+  
+    grid-column: span 2;
+
+}
+
+.campos input
+
+{
+    width: 100%;
+    padding: .7em;
+    border:none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    
+   
+}
+
+.campos button
+{
+    background:yellow;
+    padding: 1em;
+    border:none;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1.5pt;
+}
+
+.campos button:hover,
+.campos button:focus
+{
+    background:black;
+    color: yellow;
+    transition: background-color 1s ease-out;
+    outline: 0;
+    
+}
+
+
+.informacion
+{
+    background: yellow;
+    font-family: 'Vollkorn', serif;
+}
+
+h1
+{
+    text-align: center;
+}
+.texto
+{
+    text-align: justify;
+
+}
+
+span
+{
+    font-weight: bold;
+}
+
+ul
+{
+list-style: none;
+padding-left: .5em;
+}
+
+i
+{
+padding-right: .5em;
+}
+
+@media screen and (max-width:768px)
+{
+
+.logo
+{
+    font-size: 2em;
+}
+
+.campos
+{
+    display: inline;
+    
+
+}
+h4
+{
+font-size: 60%;
+text-align: justify;
+}
+.formulario
+{
+display: inline;
+}
+h3
+{
+    font-size: 90%
+}
+}

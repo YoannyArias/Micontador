@@ -13,8 +13,6 @@
   border-radius: 5px;
   
 }
-
-
 .logo img
 {
   margin-left: 100px;
@@ -40,6 +38,7 @@ span
   text-align: center; 
   position: fixed;
   right: 5%;
+  z-index: 110;
 }
 
 header
@@ -123,8 +122,8 @@ header nav ul li
 
   header nav
   {
-    width: 60%;
-    height: 45%;
+    width: 65%;
+    height: 50%;
     left: -100%;
     margin: 0;
     position: fixed; 
