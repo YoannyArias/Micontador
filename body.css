@@ -167,6 +167,7 @@ border-color:#424242;
   background: #424242;
   color: white;
   margin-bottom: 40px;
+ 
 }
 
 .botonConsultar:hover
@@ -175,6 +176,7 @@ border-color:#424242;
   border: none;
   color: #424242;
   background: white;
+  transition: background-color 1s ease-out;
 }
 
 .subCajaConsultar .botonConsultar
