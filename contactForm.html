@@ -21,44 +21,45 @@
     <!-- Animations -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
+    
 </head>
 <body>
 
     <!-- Formulario de Contacto -->
 
-    <div class="contenedor">
+    <div class="contenedor animated fadeInLeft">
        <P><h2 class="logo"> <br /><span>Contacto</span></h2></P> 
 
         <div class="formulario">
                 <div class="campos">
-                <h4 >
+                <h4>
                     Por favor diligencia la información solicitada y nos pondremos en contacto contigo a la mayor brevedad, Gracias!.
                 </h4>
                     <br />
                     <br />
-                    <form action="post" class="form"></form>
+                    <form action="contactForm.php   " method="POST" class="form"></form>
                         <p>
                                 <label for="Nombre">Nombre - Apellido</label>
-                                <input type="text" name="nombrecompleto" >
+                                <input type="text" id="nombrecompleto" name="nombrecompleto" >
                         </p>
 
                         <p>
                                 <label for="Nombre">Email</label>
-                                <input type="text" name="Email" >
+                                <input type="text" id="Email" name="Email" >
                         </p>
 
                         <p>
                                 <label for="Nombre">Teléfono</label>
-                                <input type="text" name="telefono" >
+                                <input type="text" id="telefono" name="telefono" >
                         </p>
 
                         <p>
                                 <label for="Nombre">Ciudad</label>
-                                <input type="text" name="telefono" >
+                                <input type="text" id="ciudad" name="ciudad" >
                         </p>
 
                         <p class="block">
+                            <!-- <input type="submit" class="boton"> -->
                                 <button type="submit">ENVIAR</button>
                         </p>
 
@@ -88,17 +89,11 @@
                     </li>
                 </ul>
                 <p class="texto">
-                      Un <span class="contadorPublico">Contador Público </span>  es uno de los profesionales mas demandados en Colombia, por tal razón ofrecemos a otros profesionales, personales naturales, la posibilidad de contar con un paquete de servicios tributarios, entre los que incluye su declaración de renta. <br /> <br /> Al obtener una membresía de un año por un costo mínimo, podrás librarte de tramites engorrosos y mantener tu propio Contador en el momento que lo requieras.
+                      El <span class="contadorPublico">Contador Público </span>  es uno de los profesionales mas demandados en Colombia, por tal razón ofrecemos a otros profesionales, personales naturales, la posibilidad de contar con un paquete de servicios tributarios, entre los que incluye su declaración de renta. <br /> <br /> Al obtener una membresía de un año por un costo mínimo, podrás librarte de tramites engorrosos y mantener tu propio Contador en el momento que lo requieras.
                 </p>
 
             </div>
-            
-
         </div>
-
-
-
-
 
     </div>
 

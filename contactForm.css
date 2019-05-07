@@ -67,6 +67,10 @@ background: rgb(49, 48, 48);
     font-size: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
     
 }
 .block
@@ -91,10 +95,12 @@ h4{
     color: white;
     font-size: 17px;
     outline: none;
-    
-   
 }
 
+p
+{
+    margin-right: 2em;
+}
 .campos button
 {
     background:yellow;
@@ -122,6 +128,7 @@ h4{
 {
     background: yellow;
     font-family: 'Vollkorn', serif;
+
 }
 
 h1
@@ -147,6 +154,7 @@ list-style: none;
 padding-left: .5em;
 }
 
+
 i
 {
 padding-right: .5em;
@@ -160,6 +168,10 @@ padding-right: .5em;
     font-size: 2em;
 }
 
+p
+{
+ margin-right: 0;
+}
 .campos
 {
  display: block;
@@ -177,4 +189,5 @@ h3
 {
     font-size: 90%
 }
+
 }
