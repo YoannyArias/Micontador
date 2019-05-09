@@ -1,26 +1,39 @@
+<?php
 
-    <?php
 
 require("class.phpmailer.php");
 require("class.smtp.php");
 
 // Valores enviados desde el formulario
-if ($_POST){
+if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || 
+!isset($_POST["telefono"])  || !isset($_POST["ciudad"])   ) {
+    die ("Es necesario completar todos los datos del formulario");
+}
 
-//Llamando a los campos
-$destinatario = "yoannyaus@gmail.com";
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$ciudad = $_POST['ciudad'];
 
+
+
+$nombre = $_POST["nombre"];
+
+$email = $_POST["email"];
+
+$telefono = $_POST["telefono"];
+
+$asunto = $_POST["asunto"];
+
+$mensaje = $_POST["mensaje"];
+
+
+$destinatario = "destinatario@eldominio.com";
 
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
-$smtpHost = "mail.mipropiocontador.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "info@mipropiocontador.com";  // Mi cuenta de correo
-$smtpClave = "Jo@20212223";  // Mi contrase�a
+$smtpHost = "mail.tudominio.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "correo@tudominio.com";  // Mi cuenta de correo
+$smtpClave = "123456789";  // Mi contrase�a
+
+
 
 
 $mail = new PHPMailer();
@@ -57,7 +70,9 @@ $mail->Body = "
 
 <p>telefono: {$telefono}</p>
 
-<p>asunto: {$ciudad}</p>
+<p>asunto: {$asunto}</p>
+
+<p>mensaje: {$mensaje}</p>
 
 </body> 
 
@@ -77,40 +92,16 @@ $mail->SMTPOptions = array(
 
 $estadoEnvio = $mail->Send(); 
 if($estadoEnvio){
-    header("location:http://www.mipropiocontador.com/") ;
+    echo "El correo fue enviado correctamente.";
 } else {
-    echo "Ocurrió un error inesperado.";
-    exit();
+    echo "Ocurri� un error inesperado.";
 }
-} else{
-    echo "No hay datos para procesar";
-    exit();
-}
+
+
+
+
+
+
+
 ?>
-
-<!-- // mio
-
-
-//Datos para el correo
-$contenido = "Nombre: " .$nombre ."\nEmail:" .$email ."\ntelefono:" .$telefono ."\nciudad:" .$ciudad ;
-
-mail($destino, "Contacto" , $contenido); -->
-
-<!-- // $nombreCompleto = $_POST['nombrecompleto'];
-// $email = $_POST['email'];
-// $telefono = $_POST['telefono'];
-// $ciudad = $_POST['ciudad'];
-
-
-
-
-// $destinatario = "yoannyaus@gmail.com";
-// $asunto = "Nuevo contacto";
-
-// $carta = "De $nombreCompleto \n";
-// $carta .= "De $email \n";
-// $carta .= "De $telefono \n";
-// $carta .= "De $ciudad \n"; -->
-
-
 
