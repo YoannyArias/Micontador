@@ -10,8 +10,7 @@
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-radius: 5px;
-  
+  border-radius: 5px; 
 }
 .logo img
 {
@@ -22,13 +21,12 @@ h2{
   color: white;
   text-align: center;
   margin-top: 20px;
-  letter-spacing: 1pt;
-  
+  letter-spacing: 1pt; 
 }
 
 span
 {
-  color: yellow;
+  color:#fbdb5b;
 }
 
 .whatsapp
@@ -91,7 +89,7 @@ header nav ul li a
 header nav ul li 
 :hover {
   background: #3A3C3D;
-  color: yellow;
+  color:#fbdb5b;
 }
 
 @media screen and (max-width:768px)
